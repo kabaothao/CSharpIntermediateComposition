@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace CSharpIntermediateComposition
 {
-    private readonly Logger _logger;
-    public class DbMigrator(Logger logger)
+  public class Logger
     {
-        _logger = logger;
+        public void Log(string message)
+        {
+            Console.WriteLine(message);
+        }
 
     }
-
-
-    public void Migrate()
-
 
 }
